@@ -1,0 +1,60 @@
+[CPU0] 00000001 [0000005] (info )  : begin power on
+[CPU0] 00000002 [000001a] (info )  : initialization CPU0
+[CPU0] 00000003 [000001f] (debug ) : set state and format
+[CPU0] 00000004 [000002b] (debug ) : begin thermal management
+[CPU0] 00000005 [0000337] (debug ) : init apd dc0
+[CPU0] 00000006 [00005ba] (info )  : start bootloader init 
+[CPU0] 00000007 [00013a4] (debug ) : register 8 user init
+[CPU0] 00000008 [0001339] (info )  : start firmware load to DDR
+[CPU0] 00000009 [0002fd3] (debug ) : check capacitor and charge 
+[CPU0] 0000000a [004b6d9] (info )  : locate master root pointer
+[CPU0] 0000000b [0e503fe] (debug ) : load firmware begin
+[CPU0] 0000000c [0f1e257] (info )  : enable interrupt 
+[CPU0] 0000000d [17d032b] (info )  : init sub task npc idle check
+[CPU0] 0000000e [198de83] (debug ) : check PCIE link status
+[CPU0] 0000000f [1bf7de3] (info )  : system check state and power on status
+[CPU1] 00000001 [0000007] (info )  : begin power on
+[CPU1] 00000002 [000071a] (info )  : initialization CPU1
+[CPU1] 00000003 [0000781] (info )  : format check 
+[CPU1] 00000004 [0000e54] (info )  : root pointer check and load
+[CPU1] 00000005 [0000f28] (debug ) : root check failed... retry
+[CPU1] 00000006 [00015be] (debug ) : last known root record found! begin load
+[CPU1] 00000007 [0005e3d] (debug ) : begin restore table
+[CPU1] 00000008 [0023b1c] (debug ) : fetch status register and init
+[CPU1] 00000009 [0e50fd3] (debug ) : begin platform init 
+[CPU1] 0000000a [0e90773] (debug ) : platform init complete
+[CPU1] 0000000b [13a01be] (debug ) : restore table complete
+[CPU1] 0000000c [14c2f7f] (info )  : bitmap count 0x7f1db83
+[CPU1] 0000000d [16de47f] (debug ) : xor data 0x1c1b addr 0x1b1fc
+[CPU1] 0000000e [18a52e2] (debug ) : total length 0x9fe37efb
+[CPU1] 0000000f [207bbe3] (info )  : full root restore complete
+[CPU2] 00000001 [000000f] (info )  : begin power on
+[CPU2] 00000002 [0000010] (info )  : initialization CPU2
+[CPU2] 00000003 [00000df] (debug ) : init plp table rebuild 
+[CPU2] 00000004 [000014b] (debug ) : loading persistent data
+[CPU2] 00000005 [0000397] (debug ) : begin journal init
+[CPU2] 00000006 [0000515] (debug ) : begin journal replay 
+[CPU2] 00000007 [00011a0] (info )  : journal replay complete
+[CPU2] 00000008 [004fbca] (info )  : start load table 10
+[CPU2] 00000009 [024ffd3] (debug ) : load table complete
+[CPU2] 0000000a [06c06d9] (debug ) : table consistency check
+[CPU2] 0000000b [06ffe20] (debug ) : clear pointers and fetch new block
+[CPU2] 0000000c [13191fa] (debug ) : boot status 0x13 trigger emd:1
+[CPU2] 0000000d [16dfa1e] (debug ) : === rebuild complete ===
+[CPU2] 0000000e [1725e2e] (debug ) : reserved block selected
+[CPU2] 0000000f [18cde97] (debug ) : idle scan in background
+[CPU3] 00000001 [0000009] (info )  : begin power on
+[CPU3] 00000002 [000004a] (info )  : initialization CPU3
+[CPU3] 00000003 [000005f] (info )  : set table parameters
+[CPU3] 00000004 [0000086] (info )  : opcode 0xd begin init check
+[CPU3] 00000005 [0001fc3] (debug ) : check flash channel:0 CE:0
+[CPU3] 00000006 [0002fc1] (debug ) : check flash channel:0 CE:1
+[CPU3] 00000007 [0072fe0] (debug ) : check flash channel:1 CE:2
+[CPU3] 00000008 [00827aa] (debug ) : check flash channel:1 CE:3
+[CPU3] 00000009 [008bdd3] (debug ) : check flash channel:2 CE:0
+[CPU3] 0000000a [0400bb4] (debug ) : check flash channel:2 CE:1 
+[CPU3] 0000000b [07f2e10] (debug ) : check flash channel:3 CE:1
+[CPU3] 0000000c [153e3e1] (debug ) : check flash channel:3 CE:3
+[CPU3] 0000000d [16a89b0] (debug ) : check flash channel:4 CE:0
+[CPU3] 0000000e [19ff72f] (debug ) : check flash channel:4 CE:1
+[CPU3] 0000000f [1b21091] (info )  : FIL status 0x0 complete
